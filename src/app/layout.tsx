@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar';
 import { cn } from '@/lib/utils';
 import '@/styles/globals.css';
 import { GeistSans } from 'geist/font/sans';
@@ -21,7 +22,7 @@ export default function RootLayout({
       )}
     >
       <body className={cn('min-h-screen pt-12 bg-slate-50 antialiased')}>
-        {/* <Navbar /> */}
+        <Navbar />
 
         <div className='container h-full pt-12 mx-auto max-w-7xl'>
           {children}
