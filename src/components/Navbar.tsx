@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Icons } from './Icons';
+import { buttonVariants } from './ui/Button';
 
 const Navbar = () => {
   return (
@@ -11,6 +12,12 @@ const Navbar = () => {
           <p className='hidden text-sm font-medium text-zinc-700 md:block'>
             Breadit
           </p>
+        </Link>
+
+        {/* search bar */}
+
+        <Link href='/sign-in' className={buttonVariants()}>
+          Sign In
         </Link>
       </div>
     </div>
