@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FC } from 'react';
 import { Icons } from './Icons';
 
@@ -10,6 +11,18 @@ const SignIn: FC = () => {
         <p className='max-w-xs text-sm'>
           By continuing, you are setting up a Breadit account and agree to our
           User Agreement and Privacy Policy.
+        </p>
+
+        {/* sign in form */}
+
+        <p className='px-8 text-sm text-center text-zinc-700'>
+          New to Breadit?{' '}
+          <Link
+            href='/sign-up'
+            className='text-sm underline hover:text-zinc-800 underline-offset-4'
+          >
+            Sign Up
+          </Link>
         </p>
       </div>
     </div>
