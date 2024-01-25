@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import { Toaster } from '@/components/ui/Sonner';
 import { cn } from '@/lib/utils';
 import '@/styles/globals.css';
 import { GeistSans } from 'geist/font/sans';
@@ -27,6 +28,7 @@ export default function RootLayout({
         <div className='container h-full pt-12 mx-auto max-w-7xl'>
           {children}
         </div>
+        <Toaster closeButton />
       </body>
     </html>
   );
